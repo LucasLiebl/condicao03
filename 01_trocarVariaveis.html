@@ -6,13 +6,15 @@
     */
 
     //ENTRADA
-    nr1 = parseInt(prompt("Digite um número:"))
-    nr2 = parseInt(prompt("Digite outro número:"))
+    let nr1 = parseInt(prompt("Digite um número:"))
+    let nr2 = parseInt(prompt("Digite outro número:"))
 
     //PROCESSAMENTO
-
+    const nr3 = nr1
+    nr1 = nr2
+    nr2 = nr3
 
     //SAÍDA
-
+    alert(`O número 1 era ${nr3} e agora é ${nr1}, o número ${nr1} agora é ${nr2}`)
 
 </script>
