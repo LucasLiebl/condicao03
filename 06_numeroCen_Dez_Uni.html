@@ -11,12 +11,39 @@
     */
 
     //ENTRADA
-
+    const valor = parseInt(prompt("Informe um valor menor que 1000"))
 
     //PROCESSAMENTO
-
-    
+   const c = parseInt(valor / 100)
+   const d = parseInt((valor -c * 100 )/ 10)
+   const u = parseInt(valor - (c* 100 + d * 10))
+    let texto = ""
+    if(valor >0 && valor < 1000){
+    if(c > 0){
+        texto=`${c} centena` 
+        if(c > 1){
+            texto= texto +`s`
+        }
+        texto+= ","
+    }
+    if(d > 0){
+        texto+=` ${d} dezena`
+        if(d > 1){
+            texto+= `s`
+        }
+    }
+    if (u > 0){texto+= " e"}
+    if(u > 0){
+        texto+=` ${u} unidade`
+        if(u > 1){
+            texto+= `s`
+        }
+    }}
+    else{
+        texto = "Não é um número ou é zero"
+    }
+        console.log(texto)
     //SAÍDA
-
+document.write(texto)
 
 </script>

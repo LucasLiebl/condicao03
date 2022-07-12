@@ -5,11 +5,42 @@
     */
 
     //ENTRADA
-
-
+const valor01 = parseInt(prompt("Informe o primeiro valor"))
+const valor02 = parseInt(prompt("Informe o segundo valor"))
+const valor03 = parseInt(prompt("Informe o terceiro valor"))
     //PROCESSAMENTO
-
-    
+if (valor01 > valor02 && valor02 > valor03){
+    document.write(`<br> ${valor03}`)
+    document.write(`<br> ${valor02}`)
+    document.write(`<br> ${valor01}`)
+}
+else if(valor01 > valor03 && valor03 > valor02){
+    document.write(`<br> ${valor02}`)
+    document.write(`<br> ${valor03}`)
+    document.write(`<br> ${valor01}`)
+}
+else if (valor02 > valor01 && valor01 > valor03){
+    document.write(`<br> ${valor03}`)
+    document.write(`<br> ${valor01}`)
+    document.write(`<br> ${valor02}`)
+}
+else if (valor02 > valor03 && valor03 > valor01){
+    document.write(`<br> ${valor01}`)
+    document.write(`<br> ${valor03}`)
+    document.write(`<br> ${valor02}`)
+}
+    else if (valor03 > valor01 && valor01 > valor02){
+        document.write(`<br> ${valor02}`)
+        document.write(`<br> ${valor01}`)
+        document.write(`<br> ${valor03}`)
+    }
+    else if (valor03 > valor02 && valor02 > valor01){
+        document.write(`<br> ${valor01}`)
+        document.write(`<br> ${valor02}`)
+        document.write(`<br> ${valor03}`)
+    }
+    else
+    alert("ERRO")
     //SAÍDA
 
 
